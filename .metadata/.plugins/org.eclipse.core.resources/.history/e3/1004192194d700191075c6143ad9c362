@@ -1,0 +1,7 @@
+package com.pk.model;
+
+import java.util.List;
+
+public class BookCollection {
+        private List<Book> bookList;
+}

@@ -1,0 +1,7 @@
+package com.pk.model;
+
+public class Rectangle {
+	private int width;
+	private int length;
+
+}

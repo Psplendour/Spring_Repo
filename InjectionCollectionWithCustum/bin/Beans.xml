@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="orgInfo" class="com.pk.info.OrgInfo">
+		<property name="stuArr">
+			<array>
+				<ref bean="student1" />
+				<ref bean="student2" />
+				<ref bean="student3" />
+				<ref bean="student1" />
+			</array>
+		</property>
+
+		<property name="studLsit">
+			<list>
+				<ref bean="student1" />
+				<ref bean="student2" />
+				<ref bean="student3" />
+				<ref bean="student1" />
+			</list>
+		</property>
+
+		<property name="stuSet">
+			<set>
+				<ref bean="student1" />
+				<ref bean="student2" />
+				<ref bean="student3" />
+				<ref bean="student1" />
+			</set>
+		</property>
+	</bean>
+
+	<bean id="student1" class="com.pk.model.Student">
+		<property name="StudentId" value="100"></property>
+		<property name="studentName" value="PK"></property>
+		<property name="email" value="PK@GMAIL.COM"></property>
+		<property name="gender" value="male"></property>
+	</bean>
+	<bean id="student2" class="com.pk.model.Student">
+		<property name="StudentId" value="101"></property>
+		<property name="studentName" value="DK"></property>
+		<property name="email" value="DK@GMAIL.COM"></property>
+		<property name="gender" value="male"></property>
+	</bean>
+	<bean id="student3" class="com.pk.model.Student">
+		<property name="StudentId" value="102"></property>
+		<property name="studentName" value="SK"></property>
+		<property name="email" value="SK@GMAIL.COM"></property>
+		<property name="gender" value="male"></property>
+	</bean>
+</beans>
+                           

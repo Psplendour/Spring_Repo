@@ -1,0 +1,6 @@
+package com.pk.model;
+
+public class Book {
+            private int bookId;
+            private String bookName;
+}

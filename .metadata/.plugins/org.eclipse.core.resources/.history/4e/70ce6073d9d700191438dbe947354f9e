@@ -1,0 +1,6 @@
+package com.pk.model;
+
+public class RandomNumberGenerator {
+              private Double pi;
+              private Double randomNumber;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="orgInfo" class="com.pk.info.OrgInfo">
+		<property name="namesArray">
+			<array>
+				<value>Ram</value>
+				<value>Sohan</value>
+				<value>Shayam</value>
+			</array>
+		</property>
+
+		<property name="empNameList">
+			<list>
+				<value>Mukesh</value>
+				<value>Dinesh</value>
+				<value>Suresh</value>
+				<value>Mukesh</value>
+			</list>
+		</property>
+
+		<property name="empIdsSet">
+			<set>
+				<value>1009</value>
+				<value>1110</value>
+				<value>1009</value>
+			</set>
+		</property>
+
+	</bean>
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="rectangle" class="com.pk.model.Rectangle">
+		<property name="width" value="10"></property>
+		<property name="length" value="20"></property>
+	</bean>
+
+	<bean id="perimeterCalculator" class="com.pk.model.PerimeterCalculator">
+		<property name="perimeter" value="#{2*(rectangle.width+rectangle.length)}"></property>
+	</bean>
+</beans>

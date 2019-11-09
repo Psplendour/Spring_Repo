@@ -1,0 +1,6 @@
+package com.pk.model;
+
+public class BookLibrary {
+         private List<Book> allBook;
+         private Book getFirstBook;
+}

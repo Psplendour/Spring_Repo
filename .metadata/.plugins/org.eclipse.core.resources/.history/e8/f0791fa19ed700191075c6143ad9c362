@@ -1,0 +1,8 @@
+package com.pk.model;
+
+import java.util.List;
+
+public class BookLibrary {
+         private List<Book> allBook;
+         private Book getFirstBook;
+}

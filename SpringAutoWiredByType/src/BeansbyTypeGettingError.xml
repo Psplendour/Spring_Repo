@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="employee" class="com.pk.model.Employee" autowire="byType">
+		<property name="employeeId" value="100"></property>
+		<property name="employeeName" value="Sunil"></property>
+		<property name="email" value="S@gmail.com"></property>
+	</bean>
+
+	<bean id="pancard2" class="com.pk.model.Pancard">
+		<property name="panHolderName" value="Sunil"></property>
+		<property name="panNo" value="ABCGH8963R"></property>
+	</bean>
+	
+	<bean id="pancard1" class="com.pk.model.Pancard">
+		<property name="panHolderName" value="Sunil"></property>
+		<property name="panNo" value="ABCGH8963R"></property>
+	</bean>
+</beans>
